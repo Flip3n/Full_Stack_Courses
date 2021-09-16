@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      height: 97vh;
+      margin: 0;
+      padding: 0;
+    }
+    .orangeBlocks {
+      height: 20%;
+    }
+    .orangeBlock {
+      height: 40%;
+      margin-bottom: 5px;
+      background-color: orange;
+    }
+    .yellowBlock {
+      background-color: yellow;
+      margin-bottom: 20px;
+      height: 18%;
+    }
+    .blueBlocks {
+      height: 50%;
+    }
+    .blueBlock {
+      height: 30%;
+      margin-bottom: 5px;
+      background-color: blue;
+    }
+    .greyBlocks {
+      margin-top: 0;
+      height: 10%;
+    }
+    .greyBlock {
+      height: 100%;
+      background-color: grey;
+    }
+
+    @media only screen and (min-width: 320px) {
+      .orangeBlocks {
+        height: 18%;
+      }
+      .yellowBlock {
+        height: 25%;
+      }
+      .blueBlocks {
+        height: 26%;
+      }
+      .greyBlocks {
+        height: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .greyBlock {
+        width: 49%;
+        height: 40%;
+
+      }
+      .greyBlock-none {
+        width: 49%;
+        height: 40%;
+        background-color: grey;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      .container {
+        width: 95%;
+        margin: auto;
+      }
+      .orangeBlocks {
+        display: flex;
+        justify-content: space-between;
+        height: 15%;
+      }
+      .orangeBlock {
+        height: 80%;
+        width: 49%;
+        background-color: orange;
+      }
+      .yellowBlock {
+        height: 35%;
+      }
+      .blueBlocks {
+        height: 25%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .blueBlock {
+        height: 90%;
+        width: 32%;
+      }
+      .greyBlocks {
+        height: 20%;
+      }
+      .greyBlock {
+        width: 24%;
+        height: 80%;
+      }
+      .greyBlock-none {
+        width: 24%;
+        height: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="orangeBlocks">
+    <div class="orangeBlock"></div>
+    <div class="orangeBlock"></div>
+  </div>
+  <div class="yellowBlock"></div>
+  <div class="blueBlocks">
+    <div class="blueBlock"></div>
+    <div class="blueBlock"></div>
+    <div class="blueBlock"></div>
+  </div>
+  <div class="greyBlocks">
+    <div class="greyBlock"></div>
+    <div class="greyBlock-none"></div>
+    <div class="greyBlock-none"></div>
+    <div class="greyBlock-none"></div>
+  </div>
+</div>
+
+</body>
+</html>

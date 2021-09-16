@@ -1,14 +1,13 @@
 .pagination a {
     color: black;
-    float: left;
     padding: 16px 32px;
     margin-right: 10px;
     border: 1px solid white;
     background-color: red;
+    display: inline-block;
 }
 
 .BG{
     background-color: blue;
-    height: 50px;
     width: 100%;
 }
